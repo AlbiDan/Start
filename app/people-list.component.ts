@@ -6,8 +6,8 @@ import { PeopleService } from './people.service';
   selector: 'people-list',
   template: `
   <!-- this is the new syntax for ng-repeat -->
-  <ul *ngFor="#person of people">
-    <li>
+  <ul>
+    <li *ngFor="let person of people">
         {{person.name}}
     </li>
   </ul>
